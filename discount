@@ -1,0 +1,27 @@
+\\C program to calculate total price, for discount btw 10% to 15%, 18% gst is added and for discount btw 50% to 100%, 2% gst is added 
+#include<stdio.h>
+int main()
+{
+float gst,tl,pr,dis,a,a2;
+printf("\nEnter price of product: ");
+scanf("%f",&pr);
+printf("\nEnter discount rate: %");
+scanf("%f",&dis);
+a=(pr*(dis/100));
+a2= (pr-a);
+if(dis>=10&&dis<=15)
+{
+gst= a2*(0.18);
+tl=gst+a2;
+printf("\nTotal price is: %f",tl);
+}
+else if(dis>=50&&dis<=100)
+{
+gst=a2*(0.02);
+tl=gst+a2;
+printf("\nTotal price is: %f",tl);
+}
+else
+printf("\nYour price is: %d",pr);
+return 0;
+}
