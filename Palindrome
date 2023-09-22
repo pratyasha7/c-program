@@ -1,3 +1,4 @@
+//Determine whether the number is Palindrome or not
 #include<stdio.h>
 int main()
 {
@@ -11,8 +12,8 @@ rev=(rev*10)+(no%10);
 no=(no/10);
 }
 if(rev==n)
-printf("It is a palindrome number",no);
+printf("\nIt is a palindrome number");
 else
-printf("It's not a palindrome number",no);
+printf("\nIt's not a palindrome number");
 return 0;
 }
