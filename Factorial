@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int fac=1,rg;
+printf("Enter range: ");
+scanf("%d",&rg);
+while(rg>1)
+{
+fac*=rg;
+rg--;
+}
+printf("Factorial is: %d",fac);
+return 0;
+}
