@@ -1,4 +1,4 @@
-\\C program to calculate total price, for discount btw 10% to 15%, 18% gst is added and for discount btw 50% to 100%, 2% gst is added 
+//C program to calculate total price, for discount btw 10% to 15%, 18% gst is added and for discount btw 50% to 100%, 2% gst is added 
 #include<stdio.h>
 int main()
 {
