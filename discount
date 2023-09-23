@@ -5,7 +5,7 @@ int main()
 float gst,tl,pr,dis,a,a2;
 printf("\nEnter price of product: ");
 scanf("%f",&pr);
-printf("\nEnter discount rate: %");
+printf("\nEnter discount rate: ");
 scanf("%f",&dis);
 a=(pr*(dis/100));
 a2= (pr-a);
