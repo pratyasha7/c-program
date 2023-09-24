@@ -1,0 +1,17 @@
+//Calculate sum of no.s from m to n using while loop
+#include<stdio.h>
+int main()
+{
+int sp,ep,sm=0;
+printf("Enter starting point: ");
+scanf("%d",&sp);
+printf("Enter ending point: ");
+scanf("%d",&ep);
+while(sp<=ep)
+{
+sm+=sp;
+++sp;
+}
+printf("Sum of the numbers are: %d",sm);
+return 0;
+}
