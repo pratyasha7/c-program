@@ -1,0 +1,21 @@
+//C program to convert an uppercase character to a lowercase character and vise versa
+#include<stdio.h>
+int main()
+{
+char ch;
+printf("Enter an alphabet: ");
+scanf("%c",&ch);
+if(ch!=(ch+32))
+{
+ch+=32;
+printf("\nThe lowercase character is %c",ch);
+}
+else if(ch!=(ch-32))
+{
+ch-=32;
+printf("\nThe uppercase character is %c",ch);
+}
+else
+("Please enter an alphabet!");
+return 0;
+}
