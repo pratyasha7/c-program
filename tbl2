@@ -1,0 +1,21 @@
+//Printing multiplication table of n numbers
+#include<stdio.h>
+int main()
+{
+int rng, i=1,j;
+printf("Enter range to print multiplication table: ");
+scanf("%d",&rng);
+while(i<=rng)
+{
+printf("\n");
+j=1;
+while(j<=10)
+{
+printf("\n%d*%d= %d",i,j,(i*j));
+j++;
+}
+printf("\n---------------------------------------");
+i++;
+}
+return 0;
+}
