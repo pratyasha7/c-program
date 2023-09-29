@@ -7,7 +7,7 @@ printf("Enter no to find table: ");
 scanf("%d",&no);
 while(i<=10)
 {
-printf("\n%d",no*i);
+printf("\n%d*%d= %d",no,i,no*i);
 i++;
 }
 return 0;
