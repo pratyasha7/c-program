@@ -1,4 +1,10 @@
 //Pattern printing
+/*  *
+    **
+    ***
+    ****
+    *****
+  for n no of rows */
 #include<stdio.h>
 int main()
 {
