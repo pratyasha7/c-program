@@ -1,4 +1,10 @@
-//Pattern printing 2
+/*  1
+    22
+    333
+    4444
+    55555 
+for n no of rows */
+
 #include<stdio.h>
 int main()
 {
