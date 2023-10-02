@@ -1,0 +1,18 @@
+//Finding sum of the series 1/2+2/3+3/4+...........n/(n+1).
+#include<stdio.h>
+int main()
+{
+int rng,i=1,j=2;
+float sum=0,conv;
+printf("Enter range: ");
+scanf("%d",&rng);
+while(i<=rng)
+{
+conv= (float)i/j;
+sum+=conv;
+i++;
+j++;
+}
+printf("The required sum is: %.3f",sum);
+return 0;
+}
