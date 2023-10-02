@@ -1,0 +1,19 @@
+//Finding sum of the square of even no.s within range n which is to be specified by the user 
+#include<stdio.h>
+int main()
+{
+int rng,sm=0,i=1,sq;
+printf("Enter range to find sum of the squares of even numbers: ");
+scanf("%d",&rng);
+while(i<=rng)
+{
+if(i%2==0)
+{
+sq=(i*i);
+sm+=sq;
+}
+i++;
+}
+printf("The sum of the squares of even numbers is: %d",sm);
+return 0;
+}
