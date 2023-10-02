@@ -1,0 +1,18 @@
+//Finding sum of the series 1+ (2)^2/2+ (3)^3/3+.......+ (n)^n/n
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int rng,i=1;
+float conv, sum=0;
+printf("Enter range to find sum: ");
+scanf("%d",&rng);
+while(i<=rng)
+{
+conv= (float)pow(i,i)/i;
+sum+= conv;
+i++;
+}
+printf("The sum of the series is: %f",sum);
+return 0;
+}
