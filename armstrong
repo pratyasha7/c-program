@@ -1,4 +1,4 @@
-//Determining whether a no is armstrong no or not
+//Determining whether a THREE digit no is armstrong no or not
 #include<stdio.h>
 int main()
 {
