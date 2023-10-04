@@ -1,4 +1,4 @@
-/* Printing a pyramid pattern using nested loop. No of rows to be specified by user. 
+//Printing a pyramid pattern using nested loop. No of rows to be specified by user. 
 #include<stdio.h>
 int main()
 {
