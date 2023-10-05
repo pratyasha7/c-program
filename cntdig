@@ -1,0 +1,16 @@
+//To count the number of digits in a number
+#include<stdio.h>
+int main()
+{
+int num,count=0;
+printf("Enter a number: ");
+scanf("%d",&num);
+if(num==0)
+    printf("You have entered zero");
+else
+{
+while(num/10!=0)
+++count;
+}
+printf("No of digits are: %d",count);
+}
