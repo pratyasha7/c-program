@@ -1,0 +1,27 @@
+//Check whether two numbers are amicable or not
+#include<stdio.h>
+int main()
+{
+int num1,num2,i=1,sum1=0,sum2=0,j=1,a,b;
+printf("Enter two numbers to check amicability: ");
+scanf("%d%d",&num1,&num2);
+a=num1;
+b=num2;
+while(i<=num1/2)
+{
+if(num1%i==0)
+sum1+=i;
+i++;
+}
+while(j<=num2/2)
+{
+if(num2%j==0)
+sum2+=j;
+j++;
+}
+if(sum2==a && sum1==b)
+printf("%d and %d are amicable numbers",a,b);
+else
+printf("%d and %d aren't amicable numbers",a,b);
+return 0;
+}
