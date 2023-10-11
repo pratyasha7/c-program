@@ -1,0 +1,19 @@
+//Determine whether the year is a leap year or not using function
+#include<stdio.h>
+int sum()
+{
+int i=1,sm=0,n;
+printf("Enter range to find sum: ");
+scanf("%d",&n);
+while(i<=n)
+{
+sm+=i;
+i++;
+}
+printf("\nThe required sum is: %d",sm);
+}
+int main()
+{
+sum();
+return 0;
+}
