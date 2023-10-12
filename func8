@@ -1,0 +1,19 @@
+//Sum of 1st 20 odd numbers
+#include<stdio.h>
+int sum()
+{
+int i = 1, sm = 0;
+while (i <= 40)
+    {
+if (i%2 !=0)
+            sm += i;
+        i++;
+    }
+    printf("\nSum of first 20 odd numbers is: %d", sm);
+return sm;
+}
+int main()
+{
+    sum();
+    return 0;
+}
