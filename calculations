@@ -1,4 +1,4 @@
-//Mathematical calculations using functions
+//Sum of no.s using function
 #include<stdio.h>
 int sum()
 {
