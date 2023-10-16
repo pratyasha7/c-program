@@ -1,4 +1,5 @@
 //Sum of the cubes n no.s. 'n' to be specified by user
+
 #include<stdio.h>
 int main()
 {
