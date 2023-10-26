@@ -1,0 +1,24 @@
+//Check whether a number is a happy number or not
+#include<stdio.h>
+int main()
+{
+int num,n;
+printf("Enter a number: ");
+scanf("%d",&num);
+while(num!=1 && num!=4)
+{
+    int sq=0;
+if(num>0)
+{
+n=num%10;
+sq+=n*n;
+num/=10;
+}
+num=sq;
+}
+if(num==1)
+printf("\nIt's a happy number");
+else
+printf("\nIt's not a happy number");
+return 0;
+}
