@@ -1,0 +1,23 @@
+//Check whether a triangle is equilateral or not. If it's equilateral check whether it's right angled or not.
+#include<stdio.h>
+float tri()
+{
+float hy,h,b;
+printf("Enter the length of three sides of the triangle: ");
+scanf("%f%f%f",&hy,&h,&b);
+if(hy==h && h==b && hy==b)
+{
+printf("\nIt's an equilateral triangle");
+if (hy*hy==(h*h+b*b))
+printf("\nIt's a right angled triangle");
+else
+printf("\nIt's not a right angled triangle");
+}
+else
+printf("\nIt's not an equilateral triangle");
+}
+int main()
+{
+tri();
+return 0;
+}
