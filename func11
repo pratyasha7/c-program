@@ -1,4 +1,5 @@
 //Check whether a triangle is equilateral or not. If it's not equilateral then check whether it's right angled or not.
+
 #include<stdio.h>
 float tri()
 {
