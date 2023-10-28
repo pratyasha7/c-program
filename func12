@@ -1,0 +1,17 @@
+// Convert time into minutes using function
+#include<stdio.h>
+int time()
+{
+float hrs, mins, secs, tl;
+printf("Enter hours, minutes and seconds respectively: ");
+scanf("%f%f%f",&hrs,&mins,&secs);
+hrs*=60;
+secs/=60;
+tl= (hrs+secs+mins);
+printf("The time in minutes is: %.2f",tl);
+}
+int main()
+{
+time();
+return 0;
+}
