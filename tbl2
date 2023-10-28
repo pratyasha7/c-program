@@ -1,4 +1,5 @@
 //Printing multiplication table of n numbers
+
 #include<stdio.h>
 int main()
 {
