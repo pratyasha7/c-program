@@ -1,19 +1,26 @@
-//Determining whether a THREE digit no is armstrong no or not
+//Determining whether the number entered is an armstrong number or not
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-int no,n,arm=0,tri;
+int no,n,arm=0,power,a,flag;
 printf("Enter a no: ");
 scanf("%d",&no);
 n=no;
-while(no>=1)
+a=n;
+while(no>0)
 {
-int dig=no%10;
-tri=(dig*dig*dig);
-arm+=tri;
 no/=10;
+flag++;
 }
-if(arm == n)
+while(n>=1)
+{
+int dig=n%10;
+power = pow(dig,flag);
+arm+=power;
+n/=10;
+}
+if(arm == a)
 printf("\nIt is an armstrong number");
 else
 printf("\nIt is not an armstrong number");
