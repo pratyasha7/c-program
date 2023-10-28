@@ -1,4 +1,5 @@
 //Finding max no between 5 no.s using ternary operator
+
 #include<stdio.h>
 int main()
 {
