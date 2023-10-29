@@ -1,0 +1,21 @@
+//To find the sum of the even numbers and product of odd numbers in an array
+#include<stdio.h>
+int main()
+{
+int a[10],i,even=0,odd=1;
+for(i=0;i<10;i++)
+{
+printf("Enter number: ");
+scanf("%d",&a[i]);
+}
+for(i=0;i<10;i++)
+{
+if(a[i]%2==0)
+even+=a[i];
+else
+odd*=a[i];
+}
+printf("\nThe sum of even numbers: %d",even);
+printf("\nThe product of odd numbers: %d",odd);
+return 0;
+}
