@@ -1,4 +1,5 @@
 //Find factorial of a number using function (return value)
+
 #include<stdio.h>
 int fac(){
     int n,i=1,mul=1;
