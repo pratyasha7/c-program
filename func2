@@ -1,4 +1,5 @@
 //Find greatest between two numbers using functions
+
 #include<stdio.h>
 int great(int a,int b)
 {
