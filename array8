@@ -1,0 +1,23 @@
+//Program to find frequency of an element in an array
+#include<stdio.h>
+int main()
+{
+int n,i,key,count=0;
+printf("Enter the range of the array: ");
+scanf("%d",&n);
+int a[n];
+for(i=0;i<n;i++)
+{
+printf("Enter element: ");
+scanf("%d",&a[i]);
+}
+printf("Enter element to find frequency: ");
+scanf("%d",&key);
+for(i=0;i<n;i++)
+{
+if(key==a[i])
+count++;
+}
+printf("The frequency count of %d is: %d",key,count);
+return 0;
+}
