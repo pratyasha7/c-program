@@ -11,13 +11,13 @@ for(i=0;i<n;i++)
 printf("Enter element: ");
 scanf("%d",&a[i]);
 }
-printf("Enter element to find frequency: ");
+printf("\nEnter element to find frequency: ");
 scanf("%d",&key);
 for(i=0;i<n;i++)
 {
 if(key==a[i])
 count++;
 }
-printf("The frequency count of %d is: %d",key,count);
+printf("\nThe frequency count of %d is: %d",key,count);
 return 0;
 }
