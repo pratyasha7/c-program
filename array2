@@ -1,0 +1,30 @@
+//To search a number and it's position in an array
+#include<stdio.h>
+int main()
+{
+int n,i,key,pos=1,flag=0;
+printf("Enter range: ");
+scanf("%d",&n);
+int a[n];
+for(i=0;i<n;i++)
+{
+printf("Enter element: ");
+scanf("%d",&a[i]);
+}
+printf("Enter element to search: ");
+scanf("%d",&key);
+for(i=0;i<n;i++)
+{
+if(key==a[i])
+{
+flag++;
+pos+=i;
+break;
+}
+}
+if(flag==1)
+printf("%d is found in position %d",key,pos);
+else
+printf("%d not found",key);
+return 0;
+}
