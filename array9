@@ -1,0 +1,30 @@
+//C program to display an element in an array by taking the index no as input from the user
+#include<stdio.h>
+int main()
+{
+int n,i,index,flag=0,no;
+printf("Enter range: ");
+scanf("%d",&n);
+int a[n];
+for(i=0;i<n;i++)
+{
+printf("Enter element: ");
+scanf("%d",&a[i]);
+}
+printf("Enter the index number: ");
+scanf("%d",&index);
+for(i=0;i<n;i++)
+{
+if(index==i)
+{
+no=a[i];
+flag++;
+break;
+}
+}
+if(flag==1)
+printf("The element in index %d is: %d",index,no);
+else
+printf("Index doesn't exist");
+return 0;
+}
