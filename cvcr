@@ -1,0 +1,32 @@
+//Call by value and call by refence 
+#include<stdio.h>
+int change(int *p)
+{
+*p=*p+10;
+printf("\nValue of a is: %d",*p);
+}
+int change2(int b)
+{
+int add= b+10;
+printf("\nValue of a is: %d",add);
+}
+int main()
+{
+//Call by Reference
+int a,*p;
+printf("\nEnter a number: ");
+scanf("%d",&a);
+p=&a;
+printf("\nValue of a before function call: %d",a);
+change(p);
+printf("\nValue of a after function call: %d",a);
+
+//Call by Value
+int b;
+printf("\nEnter any number: ");
+scanf("%d",&b);
+printf("\nThe value of b before function call: %d",b);
+change2(b);
+printf("\nThe value of b after function call: %d",b);
+return 0;
+}
