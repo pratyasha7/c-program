@@ -1,0 +1,22 @@
+//Find factorial of a number using recursion
+#include<stdio.h>
+int factorial(int n)
+{
+int f;
+if(n==0)
+return 1;
+else
+{
+f= n*factorial(n-1);
+return f;
+}
+}
+int main()
+{
+int n;
+printf("Enter range to find factorial: ");
+scanf("%d",&n);
+int fac= factorial(n);
+printf("Factorial is: %d",fac);
+return 0;
+}
