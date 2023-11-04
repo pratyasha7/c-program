@@ -1,0 +1,27 @@
+//Creating a 2-D array by taking the input of the no of rows and coloumns from the user and then displaying the array
+#include<stdio.h>
+int main()
+{
+int rows,cols,i,j;
+printf("Enter number of rows: ");
+scanf("%d",&rows);
+printf("\nEnter number of coloums: ");
+scanf("%d",&cols);
+int a[rows][cols];
+for(i=0;i<rows;i++)
+{
+for(j=0;j<cols;j++)
+{
+printf("\nEnter element: ");
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nThe 2-D Array is");
+for(i=0;i<rows;i++)
+{
+printf("\n");
+for(j=0;j<cols;j++)
+printf("%d\t",a[i][j]);
+}
+return 0;
+}
