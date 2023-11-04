@@ -1,0 +1,14 @@
+//To check whether the number is odd or even using pointer
+#include<stdio.h>
+int main()
+{
+int a,*p;
+printf("Enter number to check for odd or even: ");
+scanf("%d",&a);
+p=&a;
+if (*p%2==0)
+printf("\nThe number is even");
+else
+printf("\nThe number is odd");
+return 0;
+}
