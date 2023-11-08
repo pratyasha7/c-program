@@ -1,0 +1,23 @@
+//Using call by value and call by reference calculate the area of a triangle
+#include<stdio.h>
+float call_by_value(float b,float h)
+{
+float ar= 0.5*b*h;
+return ar;
+}
+float call_by_ref(float *p,float *q)
+{
+float ar= 0.5*(*p)*(*q);
+return ar;
+}
+int main()
+{
+float b,h;
+printf("Enter value of base and height of the triangle: ");
+scanf("%f%f",&b,&h);
+float tr1= call_by_value(b,h);
+printf("\nThe area of triangle by call by value method is: %f",tr1);
+float *p=&b,*q=&h;
+float tr2= call_by_ref(p,q);
+printf("\nThe area of triangle by call by reference method: %f",tr2);
+}
