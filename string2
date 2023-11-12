@@ -1,0 +1,19 @@
+//Length of total number of characters in a string
+#include<stdio.h>
+int main()
+{
+char a[50];
+int i=0,len=0,sp=0;
+printf("Enter a string: ");
+gets(a);
+while(a[i]!='\0')
+{
+if(a[i]==' ')
+sp++;
+else
+len++;
+i++;
+}
+printf("The length of the total number of characters in the string is: %d",len);
+return 0;
+}
