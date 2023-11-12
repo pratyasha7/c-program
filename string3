@@ -1,0 +1,15 @@
+//Printing the ASCII value of every character in a string
+#include<stdio.h>
+int main()
+{
+char a[50];
+int i=0;
+printf("Enter a string: ");
+gets(a);
+while(a[i]!='\0')
+{
+printf("\nThe ASCII value of %c is %d",a[i],(int)a[i]);
+i++;
+}
+return 0;
+}
