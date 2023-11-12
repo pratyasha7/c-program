@@ -1,0 +1,16 @@
+//Find the length of a string without using string function
+#include<stdio.h>
+int main()
+{
+char a[50];
+int i=0,len=0;
+printf("Enter a string: ");
+gets(a);
+while(a[i]!='\0')
+{
+len++;
+i++;
+}
+printf("The length of the string is: %d",len);
+return 0;
+}
