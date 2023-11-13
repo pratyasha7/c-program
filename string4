@@ -1,0 +1,30 @@
+//Concatenate two strings without using string function and storing it in a third variable
+#include<stdio.h>
+int main()
+{
+char a[50],b[50],c[200];
+int i=0,j=0;
+printf("Enter 1st string: ");
+gets(a);
+printf("Enter 2nd string: ");
+gets(b);
+while(a[i]!='\0')
+{
+c[i]=a[i];
+i++;
+}
+if(c[i]=='\0')
+{
+c[i]=' ';
+i++;
+}
+while(b[j]!='\0')
+{
+c[i]=b[j];
+j++;
+i++;
+}
+c[i]='\0';
+printf("\nThe concatenated string is: %s",c);
+return 0;
+}
