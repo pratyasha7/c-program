@@ -1,0 +1,76 @@
+/*Smart Bazar a subsidiary of Reliance wants to store the following details: Product Name, Product id, Product price. Write a programme in C to help Reliance in storing 
+the following details such that if they want to search a product via the id or name they should be able to get the details of the product. */
+
+#include<stdio.h>
+struct product
+{
+char name[70];
+long int id;
+float price;
+};
+int main()
+{
+    int ch,i,flag=0,pos,pos2,j,temp=0;
+    long int cd;
+    char nm[70];
+struct product dtls[]=
+{
+{"Lakme Cleanser",1265745,456},
+{"Lotus Night Cream",126742,542},
+{"Solecross Sunscream",126754,345},
+{"Loreal Age Perfect",126751,675},
+{"CeraVe Eye Repair Cream",126724,999}
+};
+printf("Choose: \n1> Search using product name \n2> Search using product id");
+printf("\nEnter choice: ");
+scanf("%d",&ch);
+if(ch==1)
+{
+    printf("\nEnter product name: ");
+    getchar();
+    gets(nm);
+for(i=0;i<5;i++)
+    {
+        if (strcmp(dtls[i].name, nm)==0)
+        {
+            flag++;
+            pos=i;
+            break;
+        }
+
+    }
+    if(flag==1)
+    {
+
+        printf("\n Name of Product: %s",dtls[pos].name);
+        printf("\nProduct code: %ld",dtls[pos].id);
+        printf("\nPrice: %f",dtls[pos].price);
+    }
+}
+else if(ch==2)
+{
+    printf("\nEnter product id: ");
+    scanf("%ld",&cd);
+    for(j=0;j<5;j++)
+    {
+        if(dtls[j].id==cd)
+        {
+            temp++;
+            pos2=j;
+            break;
+        }
+    }
+    if(temp==1)
+    {
+        printf("\n Name of Product: %s",dtls[pos2].name);
+        printf("\nProduct id: %ld",dtls[pos2].id);
+        printf("\nPrice: %f",dtls[pos2].price);
+
+    }
+}
+else
+    printf("Product not found!");
+return 0;
+}
+
+
