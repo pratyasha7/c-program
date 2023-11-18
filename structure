@@ -1,5 +1,6 @@
-/*Smart Bazar a subsidiary of Reliance wants to store the following details: Product Name, Product id, Product price. Write a programme in C to help Reliance in storing 
-the following details such that if they want to search a product via the id or name they should be able to get the details of the product. */
+/*Smart Bazar a subsidiary of Reliance wants to store the following details: Product Name, Product id, Product price.
+Write a programme in C to help Reliance in storing the following details such that if they want to search a product via the
+id or name they should be able to get the details of the product. */
 
 #include<stdio.h>
 struct product
@@ -21,7 +22,7 @@ struct product dtls[]=
 {"Loreal Age Perfect",126751,675},
 {"CeraVe Eye Repair Cream",126724,999}
 };
-printf("Choose: \n1> Search using product name \n2> Search using product id");
+printf("Choose: \n1> Search using product name \n2> Search using product code");
 printf("\nEnter choice: ");
 scanf("%d",&ch);
 if(ch==1)
@@ -31,7 +32,7 @@ if(ch==1)
     gets(nm);
 for(i=0;i<5;i++)
     {
-        if (strcmp(dtls[i].name, nm)==0)
+        if (strcasecmp(dtls[i].name, nm)==0)
         {
             flag++;
             pos=i;
@@ -46,6 +47,8 @@ for(i=0;i<5;i++)
         printf("\nProduct code: %ld",dtls[pos].id);
         printf("\nPrice: %f",dtls[pos].price);
     }
+    else
+        printf("Error!Product not Found!");
 }
 else if(ch==2)
 {
@@ -67,6 +70,8 @@ else if(ch==2)
         printf("\nPrice: %f",dtls[pos2].price);
 
     }
+    else
+        printf("Enter correct code!");
 }
 else
     printf("Product not found!");
