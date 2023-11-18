@@ -74,7 +74,7 @@ else if(ch==2)
         printf("Enter correct code!");
 }
 else
-    printf("Product not found!");
+    printf("Please enter correct choice!");
 return 0;
 }
 
