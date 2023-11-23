@@ -1,0 +1,29 @@
+//Program to delete an element from the array
+#include<stdio.h>
+int main()
+{
+int i,j,key,index;
+int a[10];
+for(i=0;i<10;i++)
+{
+printf("Enter element: ");
+scanf("%d",&a[i]);
+}
+printf("Enter element to delete: ");
+scanf("%d",&key);
+index=9;
+for(i=0;i<=index;i++)
+{
+if(a[i]==key)
+{
+for (j=(i+1);j<=index;j++)
+a[j-1]=a[j];
+i--;
+index--;
+}
+}
+printf("The updated array is:");
+for(i=0;i<=index;i++)
+printf("%d\t",a[i]);
+return 0;
+}
