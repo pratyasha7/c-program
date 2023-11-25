@@ -1,0 +1,16 @@
+//Reading the contents of a file
+#include<stdio.h>
+int main()
+{
+FILE *fp;
+char file_name[20],data[100];
+fp= fopen("student.txt","r");
+if(fp!=NULL){
+printf("File exists!");
+while((fgets(data,100,fp))!=NULL)
+printf("\n%s\n",data);
+fclose(fp);
+}
+else
+printf("File dosen't exist!");
+return 0;
