@@ -1,0 +1,45 @@
+//Usage of union in structure in an array
+#include<stdio.h>
+struct user_data
+{
+char name[50];
+int age;
+union
+{
+long int voter_id;
+long int aadhar_no;
+long int pan_no;
+}id;
+};
+int main()
+{
+int ch;
+struct user_data ud;
+printf("Enter name: ");
+gets(ud.name);
+printf("\nEnter age: ");
+scanf("%d",&ud.age);
+printf("\nChoose: \n1>Voter Id \n2>Aadhar No \n3>Pan No ");
+scanf("%d",&ch);
+switch(ch)
+{
+case 1:
+printf("Enter Voter Id: ");
+scanf("%ld",&ud.id.voter_id);
+break;
+case 2:
+printf("Enter Aadhar no: ");
+scanf("%ld",&ud.id.aadhar_no);
+break;
+case 3:
+printf("Enter Pan no: ");
+scanf("%ld",&ud.id.pan_no);
+break;
+default:
+    printf("Enter correct choice!");
+}
+printf("\nName: %s",ud.name);
+printf("\nAge: %d",ud.age);
+printf("\nId No: %ld",ud.id.voter_id);
+return 0;
+}
