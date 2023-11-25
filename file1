@@ -4,13 +4,13 @@ int main()
 {
 FILE *fp;
 char input[100];
-fp= fopen("student.txt","w");
+fp= fopen("student.txt","a");
 if(fp!=NULL)
 {
 printf("File exists");
 printf("\nInput: ");
 gets(input);
-fprintf(fp,"%s",input);
+fprintf(fp,"\n%s",input);
 printf("Data saved in file!");
 fclose(fp);
 return 0;
