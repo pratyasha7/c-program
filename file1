@@ -1,0 +1,23 @@
+//Writing in a file
+#include<stdio.h>
+int main()
+{
+FILE *fp;
+char input[100];
+fp= fopen("student.txt","w");
+if(fp!=NULL)
+{
+printf("File exists");
+printf("\nInput: ");
+gets(input);
+fprintf(fp,"%s",input);
+printf("Data saved in file!");
+fclose(fp);
+return 0;
+}
+else
+printf("File doesn't exist!");
+return 0;
+}
+
+
