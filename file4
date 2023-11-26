@@ -1,0 +1,19 @@
+//Reading the contents of a file by taking the file name from the user
+#include<stdio.h>
+int main()
+{
+FILE *fp;
+char file_name[20],data[100];
+printf("Enter file to open: ");
+gets(file_name);
+fp= fopen(file_name,"r");
+if(fp!=NULL){
+printf("File exists!");
+while((fgets(data,100,fp))!=NULL)
+printf("\n%s",data);
+fclose(fp);
+}
+else
+printf("File dosen't exist!");
+return 0;
+}
