@@ -1,0 +1,26 @@
+//Determining the number of lines and character in a file
+#include<stdio.h>
+int main()
+{
+FILE *fp;
+int count=0,new_line=0,c;
+char name[20];
+printf("Enter name of the file to open: ");
+gets(name);
+fp=fopen(name,"r");
+if(fp!=NULL){
+printf("File exists!");
+c=fgetc(fp);
+while(c!=EOF){
+count++;
+    if(c=='\n')
+    new_line++;
+    c=fgetc(fp);
+}
+printf("\nThe number of characters in the file is: %d",count);
+printf("\nThe number of lines in the file is: %d",new_line);
+return 0;
+}
+else
+    printf("File doesn't exist!");
+}
