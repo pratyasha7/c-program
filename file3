@@ -1,0 +1,25 @@
+//Writing in a file untill and unless the user chooses to exit
+#include<stdio.h>
+int main()
+{
+    FILE *fp;
+    char input[100];
+    int ch;
+    fp=fopen("empolyee.text","w");
+    if(fp!=NULL)
+    {
+    printf("File has been successfully opened!");
+    while(1){
+    printf("\nEnter something to input in file: ");
+    getchar();
+    gets(input);
+    fprintf(fp,"%s",input);
+    printf("\nDo you want to enter more?\n1>To enter more\n2>Exit\nChoice: ");
+    scanf("%d",&ch);
+    if(ch==2)
+    break;
+    }
+    fclose(fp);
+    }
+    return 0;
+}
