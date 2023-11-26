@@ -1,0 +1,9 @@
+//Determining the size of an array
+#include<stdio.h>
+int main()
+{
+    int a[]={1,2,3,4,5,6,7,8,9,10};
+    printf("Size of the array is: %d",sizeof(a));
+    return 0;
+
+}
