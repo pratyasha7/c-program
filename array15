@@ -1,4 +1,4 @@
-//Displaying the elements of an array in ascending order
+//Displaying the elements of an array in ascending order using selection sorting
 #include<stdio.h>
 int main()
 {
