@@ -21,6 +21,16 @@ while(b<i)
 printf(" ");
 b++;
 }
+j=1;
+while(j<=(n+1)-i)
+{
+printf("*");
+j++;
+}
+i++;
+}
+return 0;
+}
 
 //OR
 //Another logic for printing this pattern
@@ -45,13 +55,3 @@ int main()
   return 0;
 }
 
-j=1;
-while(j<=(n+1)-i)
-{
-printf("*");
-j++;
-}
-i++;
-}
-return 0;
-}
