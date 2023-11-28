@@ -21,6 +21,30 @@ while(b<i)
 printf(" ");
 b++;
 }
+
+//OR
+//Another logic for printing this pattern
+#include<stdio.h>
+int main()
+{
+    int i=1,j,r,r1;
+    printf("Enter number of rows: ");
+    scanf("%d",&r);
+    r1=r;
+    while(i<=r1)
+    {
+        printf("\n");
+        j=1;
+        while(j<=r){
+            printf("*");
+            j++;
+            }
+            r--;
+        i++;
+    }
+  return 0;
+}
+
 j=1;
 while(j<=(n+1)-i)
 {
