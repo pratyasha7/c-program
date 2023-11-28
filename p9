@@ -27,3 +27,29 @@ n--;
 }
 return 0;
 }
+
+//OR
+//Another logic
+
+#include<stdio.h>
+int main()
+{
+char ch;
+int i=1,j,n;
+printf("Enter number of rows: ");
+scanf("%d",&n);
+int no=n;
+while(i<=n){
+printf("\n");
+j=1;
+ch='A';
+while(j<=no){
+printf("%c",ch);
+j++;
+ch++;
+}
+no--;
+i++;
+}
+return 0;
+}
