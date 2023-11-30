@@ -1,4 +1,4 @@
-//Addition of two arrays
+//Addition of two 2-D matrices
 #include<stdio.h>
 int main()
 {
