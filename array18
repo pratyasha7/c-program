@@ -1,0 +1,45 @@
+//Addition of two arrays
+#include<stdio.h>
+int main()
+{
+int i,j,a[3][3],b[3][3],c[3][3];
+printf("Creating the 1st 2-D array");
+for(i=0;i<3;i++){
+for(j=0;j<3;j++){
+printf("\nEnter element: ");
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nThe 1st array is");
+for(i=0;i<3;i++){
+printf("\n");
+for(j=0;j<3;j++)
+printf("%d\t",a[i][j]);
+}
+printf("\n");
+printf("\nCreating the 2nd 2-D array");
+for(i=0;i<3;i++){
+for(j=0;j<3;j++){
+printf("\nEnter element: ");
+scanf("%d",&b[i][j]);
+}
+}
+printf("\nThe second array is");
+for(i=0;i<3;i++){
+printf("\n");
+for(j=0;j<3;j++)
+printf("%d\t",b[i][j]);
+}
+for(i=0;i<3;i++){
+for(j=0;j<3;j++)
+c[i][j]=a[i][j]+b[i][j];
+}
+printf("\n");
+printf("\nThe addition of the two matrices is");
+for(i=0;i<3;i++){
+printf("\n");
+for(j=0;j<3;j++)
+printf("%d\t",c[i][j]);
+}
+return 0;
+}
