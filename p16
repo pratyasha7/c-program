@@ -1,0 +1,19 @@
+//Floyd’s triangle
+#include<stdio.h>
+int main()
+{
+int i=1,j,n,no=1;
+printf("Enter the number of rows: ");
+scanf("%d",&n);
+while(i<=n){
+printf("\n");
+j=1;
+while(j<=i){
+printf("%d ",no);
+j++;
+no++;
+}
+i++;
+}
+return 0;
+}
