@@ -1,0 +1,27 @@
+//Programs using pointers
+
+#include<stdio.h>
+int main()
+{
+//Addition of two floating point numbers
+float a,b,sum;
+printf("Enter two floating point numbers: ");
+scanf("%f%f",&a,&b);
+float *p=&a,*q=&b;
+sum=*p+*q;
+printf("Addition: %0.2f\n",sum);
+//Printing String
+char str[]="Hello World";
+char *r=&str;
+while(*r!='\0'){
+    printf("%c",*r);
+    r++;
+}
+//Finding the largest number
+int e,f,g,max;
+printf("\nEnter three numbers: ");
+scanf("%d%d%d",&e,&f,&g);
+int *e1=&e,*f1=&f,*g1=&g;
+max= (*e1>*f1 && *e1>*g1)?*e1:(*f1>*e1 && *f1>*g1)?*f1:*g1;
+printf("Largest Number: %d",max);
+}
