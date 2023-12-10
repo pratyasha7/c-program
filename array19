@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+int i,j,a[3][3],b[3][3],c[3][3],k;
+printf("Creating the 1st 2-D array");
+for(i=0;i<3;i++){
+for(j=0;j<3;j++){
+printf("\nEnter element: ");
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nThe 1st array is");
+for(i=0;i<3;i++){
+printf("\n");
+for(j=0;j<3;j++)
+printf("%d\t",a[i][j]);
+}
+printf("\n");
+printf("\nCreating the 2nd 2-D array");
+for(i=0;i<3;i++){
+for(j=0;j<3;j++){
+printf("\nEnter element: ");
+scanf("%d",&b[i][j]);
+}
+}
+printf("\nThe second array is");
+for(i=0;i<3;i++){
+printf("\n");
+for(j=0;j<3;j++)
+printf("%d\t",b[i][j]);
+}
+for(i=0;i<3;i++){
+for(j=0;j<3;j++){
+c[i][j]=0;
+for(k=0;k<3;k++)
+c[i][j]+=a[i][k]*b[k][j];
+}
+}
+printf("\n");
+printf("\nThe required matrix is: ");
+for(i=0;i<3;i++){
+printf("\n");
+for(j=0;j<3;j++)
+printf("%d\t",c[i][j]);
+}
+}
