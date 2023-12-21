@@ -2,18 +2,18 @@
 #include<stdio.h>
 int main()
 {
-int rev=0,no,n;
-printf("Enter a number: ");
+int no,rev=0,n;
+printf("Enter an integer x: ");
 scanf("%d",&no);
 n=no;
-while(no>=1)
+while(no!=0)
 {
-rev=(rev*10)+(no%10);
-no=(no/10);
+rev= rev*10+(no%10);
+no/=10;
 }
-if(rev==n)
-printf("\nIt is a palindrome number");
+if(rev==n && rev>0)
+printf("It's a palindrome number");
 else
-printf("\nIt's not a palindrome number");
+printf("It's not a palindrome number");
 return 0;
 }
