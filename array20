@@ -1,0 +1,28 @@
+//Input an array and it's output values are the factorial of each element in the array
+#include<stdio.h>
+int main(){
+	int n,i;
+	printf("Enter range: ");
+	scanf("%d",&n);
+	int a[n];
+	for(i=0;i<n;i++){
+		printf("Enter element: ");
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++){
+
+if (a[i]>0){
+int b=a[i];
+int mul=1;
+for(int j=b;j>0;j--)
+
+	mul*=j;
+	a[i]=mul;
+}
+}
+printf("Updated array");
+for(i=0;i<n;i++)
+	printf("\n%d",a[i]);
+
+return 0;
+}
