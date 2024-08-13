@@ -1,0 +1,31 @@
+//C program to add the elements of two arrays
+#include<stdio.h>
+int main(){
+	int n,i,n2;
+	printf("Enter range for 1st array: ");
+	scanf("%d",&n);
+	printf("Enter range for 2nd array: ");
+	scanf("%d",&n2);
+	int a[n],b[n2];
+	int max = n > n2 ? n : n2;
+	int c[max];
+
+	for(i=0;i<n;i++){
+		printf("Enter element for 1st array: ");
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n2;i++){
+		printf("Enter element for 2nd array: ");
+		scanf("%d",&b[i]);
+	}
+	for(i=0;i<n;i++)
+            c[i]= a[i];
+   for(i=0;i<max;i++)
+    c[i]+=b[i];
+
+
+        printf("Updated array");
+        for(i=0;i<max;i++)
+            printf("\n%d",c[i]);
+return 0;
+}
